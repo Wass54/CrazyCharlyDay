@@ -63,13 +63,18 @@ class VueParticipant
                     $json = $this->affichageJSONCategorie();
                     break;
                 }
+            case 1:
+                {
+                    $json = $this->affichageJSONUneCategorie();
+                    break;
+                }
         }
         return $json;
     }
     
     
     
-    //Créer un document en format json
+    //Crï¿½er un document en format json
     private function affichageJSONCategorie(){
         $json= "{\"type\":\"categorie\", \"categories\":[{";
         foreach ($this->tab as $l){
@@ -79,5 +84,15 @@ class VueParticipant
         return $json;
     }
     
+    //Créer un document en format json
+    private function affichageJSONUneCategorie(){
+        $json= "{";
+        $json.= "\"id\":\"".$this->tab["id"]."\",\"nom\":\"".$this->tab["nom"]."\"";        
+        $json.="}";
+        return $json;
+    }
+    
+    
+
     
 }
