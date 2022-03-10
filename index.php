@@ -34,6 +34,19 @@ $app->get('/details/',\custumbox\controller\AffichageController::class.':affiche
 
 
 
+    /*Crée une liste*/
+$app->get('/newProduct/',
+    \custumbox\controller\CreationController::class.':afficherFormProduit')->setName('nouvProduit');
+
+$app->post('/newProduct/',
+    \custumbox\controller\CreationController::class.':traiterFormProduit')->setName('nvxProduits');
+// $app->get('/nouveauProduit',\custumbox\controller\AffichageController::class.':affichage_NouveauProduit')->SetName('nvxProduits');
+
+
+
+
+
+
 $app->run();
 
 

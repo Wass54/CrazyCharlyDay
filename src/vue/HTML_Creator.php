@@ -18,6 +18,7 @@ class HTML_Creator{
     public function html_body(string $content): string{
 
         $url_accueil = $this->container->router->pathFor('accueil');
+        $url_nvxProduit = $this->container->router->pathFor('nouvProduit');
         $url_js = $this->container->router->pathFor('accueil') . "js";
         echo $url_js;
         $html = <<<END
@@ -52,7 +53,7 @@ class HTML_Creator{
                                     <li><a class="dropdown-item" href="#!">All Products</a></li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                                    <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                                    <li><a class="dropdown-item" href="$url_nvxProduit">Nouveau produits</a></li>
                                 </ul>
                             </li>
                         </ul>

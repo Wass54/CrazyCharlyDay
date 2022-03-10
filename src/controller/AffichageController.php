@@ -45,13 +45,16 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
 
 
     public function afficherDetails(Request $rq, Response $rs, array $args) : Response{
-        $vue = new \custumbox\vue\HTML_details([], $this->container);
-        $html = $vue->render(0);
+        $vue = new \custumbox\vue\VueParticipant([], $this->container);
+        $html = $vue->render(1);
         $rs->getBody()->write($html);
         return $rs;
     }
     
-    
+   
+
+
+
     
     public function afficherUneCategorieJSON(Request $rq, Response $rs, array $args): Response
     {
