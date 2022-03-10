@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace flashcards\models;
+namespace custumbox\models;
 
 class Categorie extends \Illuminate\Database\Eloquent\Model{
     protected $table = 'categorie';
