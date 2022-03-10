@@ -24,10 +24,6 @@ class HTML_Creator{
         <html lang="fr">
             <head>
                 <meta charset="utf-8" />
-                <link rel="stylesheet" href="$url_accueil/css/index.css" />
-                <link rel="stylesheet" href="$url_accueil/css/menu_deroulant.css" />
-                <link rel="stylesheet" href="$url_accueil/css/header.css" />
-                <link rel="stylesheet" href="$url_accueil/css/index_media.css" />
                 <title>Page d'Accueil</title>
             </head>
             <body>
@@ -37,9 +33,9 @@ class HTML_Creator{
             			<li><a href="$url_accueil"><img class="logo" src='{$url_accueil}/images/logoatelier.png'></a></li>
             			<li class="menu"><a href="#">#</a>
                             <ul class="submenu">
-                               <li><a href='#'>Le pannier</a></li>
-                               <li><a href='#'>Vos achats</a></li>
-                               <li><a href='#'>A Propos de nous</a></li>
+                               <li><a href='#'>#</a></li>
+                               <li><a href='#'>#</a></li>
+                               <li><a href='#'>ABABA</a></li>
                             </ul>
                         </li>
                         <li class="menu"><a href="#">#</a></li>
