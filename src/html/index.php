@@ -1,3 +1,13 @@
+<?php
+
+    $con = mysqli_connect('localhost','root');
+    mysqli_select_db($con,'custombox');
+    $sql = "SELECT * FROM categorie";
+    $featured = $con->query($sql);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,6 +16,11 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Shop Homepage - Start Bootstrap Template</title>
+
+
+        <script src="https::/ajax.com.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -17,11 +32,12 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,10 +78,15 @@
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
+
+                                    <?php
+                                        while($product = mysqli_fetch_assoc($featured));
+                                    ?>
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
+                                    <h5 class="fw-bolder"><?=$product['price']; ?></h5>
                                     <!-- Product price-->
                                     $40.00 - $80.00
+                                    <?php endwhile; ?>
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -104,8 +125,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5" >
-                        <div class="card h-100" href="product.html">
+                    <div class="col mb-5">
+                        <div class="card h-100">
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
@@ -122,7 +143,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
                             </div>
                         </div>
                     </div>
@@ -171,7 +192,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product.html">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
                             </div>
                         </div>
                     </div>
