@@ -31,7 +31,7 @@ class VueParticipant
     {
         $content = '';
         foreach ($this->tab as $l) {
-                $content .= "<div class=\"categorie\">ID Categ: $l[id]  Nom : $l[nom]<br></div>\n";
+                $content .= "<div class=\"categorie\">ID Categ: $l[id]  Nom : $l[nom] - <br></div>\n";
             }
         return "<section>" . $content . "</section>";
     }
