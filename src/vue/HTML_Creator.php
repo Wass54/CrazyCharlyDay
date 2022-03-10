@@ -32,22 +32,23 @@ class HTML_Creator{
             </head>
             <body>
                 <header>
-            	<nav>
-            		<ul>
-            			<li><a href="#"><img class="logo" src='#'></a></li>
-            			<li class="menu"><a href="#">#</a>
-                            <ul class="submenu">
-                               <li><a href='#'>#</a></li>
-                               <li><a href='#'>#</a></li>
-                               <li><a href='#'>#</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu"><a href="#">#</a></li>
-                        <li class="menu"><a href="#">#</a></li>
-                        <li class="menu"><a href="#">#</a></li>
-            		</ul>
-            	</nav>
-            </header>
+                    <nav>
+                        <ul>
+                            <li><a href="#"><img class="logo" src='#'></a></li>
+                            <li class="menu"><a href="#">#</a>
+                                <ul class="submenu">
+                                <li><a href='#'>#</a></li>
+                                <li><a href='#'>#</a></li>
+                                <li><a href='#'>#</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu"><a href="#">#</a></li>
+                            <li class="menu"><a href="#">#</a></li>
+                            <li class="menu"><a href="#">#</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <input type="text" id="product-search" placeholder="Rechercher un produit" />
                 <div class="content">
                 $content
                 </div>
