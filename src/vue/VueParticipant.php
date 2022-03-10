@@ -72,7 +72,7 @@ class VueParticipant
                       </div>";         
             
         }
-        return "<section>" . $content . "</section>";
+        return  $content;
     }
  
 
@@ -134,7 +134,7 @@ class VueParticipant
         return $json;
     }
     
-    //Créer un document en format json
+    //Crï¿½er un document en format json
     private function affichageJSONUneCategorie(){
         $json= "{";
         $json.= "\"id\":\"".$this->tab["id"]."\",\"nom\":\"".$this->tab["nom"]."\"";        
