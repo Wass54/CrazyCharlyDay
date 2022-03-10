@@ -39,7 +39,7 @@ class VueCreation{
     /**Affiche le resultat lorsqu'on cree une liste */
     private function produitCree():string{
         $l = $this->tab[0];
-        $content = "<article style='color:white;'>Voici le produit crée : <h6>Titre : $l[titre]; Description : $l[description] Categorie : $l[categorie] Poid :$l[poids]</h6><article/>";
+        $content = "<article style='color:black;'>Voici le produit crée : <h6>Titre : $l[titre]; Description : $l[description] Categorie : $l[categorie] Poid :$l[poids]</h6><article/>";
         return $content;
     }
 

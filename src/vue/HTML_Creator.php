@@ -40,31 +40,29 @@ class HTML_Creator
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
                 <!-- Core theme CSS (includes Bootstrap)-->
                 <link href="$url_css/styles.css" rel="stylesheet" />
+                <link href="$url_css/stylePerso.css" rel="stylesheet" />
             </head>
             <body>
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container px-4 px-lg-5">
-                    <a class="navbar-brand" href="$url_accueil">Custombox</a>
+                    <a class="navbar-brand" href="$url_produit">Custombox</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="$url_accueil">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="$url_accueil">catégorie</a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produits</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#!">All Products</a></li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li><a class="dropdown-item" href="$url_produit">Produit</a></li>
+                                    <li><a class="dropdown-item" href="$url_produit">Produits</a></li>
                                     <li><a class="dropdown-item" href="$url_nvxProduit">Nouveau produits</a></li>
-                                    <li><a class="dropdown-item" href="#!">Categorie</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <form class="d-flex">
                             <button class="btn btn-outline-dark" type="submit">
                                 <i class="bi-cart-fill me-1"></i>
-                                Cart
+                                Boxes
                                 <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                             </button>
                         </form>
@@ -72,7 +70,7 @@ class HTML_Creator
                 </div>
             </nav>
             <!-- Header-->
-            <header class="bg-dark py-5">
+            <header class="bg-dark py-5" style="padding: 50px">
                 <div class="container px-4 px-lg-5 my-5">
                     <div class="text-center text-white">
                         <h1 class="display-4 fw-bolder">Shop in style</h1>
@@ -81,9 +79,9 @@ class HTML_Creator
                 </div>
             </header>
             <!-- Section-->
-            <section class="py-5">
+            <section class="py-5" style="background: linear-gradient( #47ACA4, #DDC484)">
                 <div class="container px-4 px-lg-5 mt-5" >
-                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" >
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                             $content
                     </div>
                 </div>

@@ -52,7 +52,7 @@ class VueParticipant
                 'id' => $l['id']
             ]);
             $content .= " <div class=\"col mb-5\">
-                            <div id=\"card h-100\">
+                            <div id=\"card h-100\" style=\"background-color:#98C8C4; padding: 4px\">
                                 <!-- Sale badge-->
                                 <div class=\"badge bg-dark text-white position-absolute\" style=\"top: 0.5rem; right: 0.5rem\">Sale</div>
                                 <!-- Product image-->
