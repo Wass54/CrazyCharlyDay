@@ -26,7 +26,6 @@ class VueParticipant
         return $content;
     }
 
-
     private function affichage_Categorie(): string
     {
         $content = '';
