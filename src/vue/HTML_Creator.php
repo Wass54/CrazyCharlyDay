@@ -34,12 +34,12 @@ class HTML_Creator{
                 <header>
             	<nav>
             		<ul>
-            			<li><a href="#"><img class="logo" src='#'></a></li>
+            			<li><a href="$url_accueil"><img class="logo" src='{$url_accueil}/images/logoatelier.png'></a></li>
             			<li class="menu"><a href="#">#</a>
                             <ul class="submenu">
-                               <li><a href='#'>#</a></li>
-                               <li><a href='#'>#</a></li>
-                               <li><a href='#'>#</a></li>
+                               <li><a href='#'>Le pannier</a></li>
+                               <li><a href='#'>Vos achats</a></li>
+                               <li><a href='#'>A Propos de nous</a></li>
                             </ul>
                         </li>
                         <li class="menu"><a href="#">#</a></li>
