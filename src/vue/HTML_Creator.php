@@ -44,6 +44,7 @@ class HTML_Creator{
             		</ul>
             	</nav>
             </header>
+                <input type="text" id="product-search" placeholder="Rechercher un produit" />
                 <div class="content">
                 $content
                 </div>

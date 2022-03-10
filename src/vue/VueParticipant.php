@@ -39,7 +39,6 @@ class VueParticipant
 
 
 
-
     public function render($selecteur) /**Cette fonction permet de recuperer les méthode qui sont en priver à partir des controller */
     {
         switch ($selecteur) {
