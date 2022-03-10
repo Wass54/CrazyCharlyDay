@@ -19,11 +19,23 @@ class VueParticipant
     /** A l'acceuil de la page on vous propose de creer un compte mais bien evidement vous n'êtes pas obliger */
     private function htmlAccueil(): string
     {
-        $content = "Bienvenue dans custumbox";
+        $content = "Bienvenue dans custumbox <br>";
+        foreach ($this->tab as $l) {
+            $content .= "<div class=\"categorie\">ID Categ: $l[id]  Nom : $l[nom]<br></div>\n";
+        }
         return $content;
     }
 
 
+    private function affichage_Categorie(): string
+    {
+        $content = '';
+        foreach ($this->tab as $l) {
+                $content .= "<div class=\"categorie\">ID Categ: $l[id]  Nom : $l[nom] - <br></div>\n";
+            }
+        return "<section>" . $content . "</section>";
+    }
+ 
 
 
 

@@ -24,10 +24,6 @@ class HTML_Creator{
         <html lang="fr">
             <head>
                 <meta charset="utf-8" />
-                <link rel="stylesheet" href="$url_accueil/css/index.css" />
-                <link rel="stylesheet" href="$url_accueil/css/menu_deroulant.css" />
-                <link rel="stylesheet" href="$url_accueil/css/header.css" />
-                <link rel="stylesheet" href="$url_accueil/css/index_media.css" />
                 <title>Page d'Accueil</title>
             </head>
             <body>
