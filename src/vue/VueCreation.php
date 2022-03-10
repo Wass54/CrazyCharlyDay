@@ -19,8 +19,8 @@ class VueCreation{
         $content="<form method='post' action='$url'>
             <input type='text' name='titre' placeholder='le titre ici'/>
             <input type='text' name='description' placeholder='la description'/>
-            <input type='date' name='categories' placeholder='La categorie'/>
-            <input type='date' name='poids' placeholder='Le poids en kg'/>
+            <input type='text' name='categories' placeholder='La categorie'/>
+            <input type='text' name='poids' placeholder='Le poids en kg'/>
             <button type='submit'>Créer le produit</button>
             </form>\n";
         return $content;
@@ -29,9 +29,8 @@ class VueCreation{
 
     /**Affiche le resultat lorsqu'on cree une liste */
     private function produitCree():string{
-        var_dump($tab[0]);
         $l = $this->tab[0];
-        $content = "<article style='color:white;'>Voici le produit crée : <h5>$l[titre];$l[description];$l[categories];$l[poids];</h5> <article/>";
+        $content = "<article style='color:white;'>Voici le produit crée : <h6>Titre : $l[titre]; Description : $l[description] Categorie : $l[categorie] Poid :$l[poids]</h6><article/>";
         return $content;
     }
 

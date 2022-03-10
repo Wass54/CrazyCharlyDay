@@ -24,6 +24,7 @@ $app->get('/',\custumbox\controller\AffichageController::class.':afficherAccueil
 
 $app->get('/categorie/',\custumbox\controller\AffichageController::class.':afficherCategorie')->SetName('categ');
 
+$app->get('/produit/',\custumbox\controller\AffichageController::class.':afficherProduit')->SetName('produit');
 
 $app->get('/categorieJSON/',\custumbox\controller\AffichageController::class.':afficherCategorieJSON')->SetName('categJSON');
 
