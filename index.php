@@ -21,10 +21,14 @@ $db->bootEloquent();
 /**Acceuil */
 $app->get('/',\custumbox\controller\AffichageController::class.':afficherAccueil')->SetName('accueil');
 
-$app->get('/categorie/',\custumbox\controller\AffichageController::class.':afficherCategorieJSON')->SetName('categJSON');
+
+$app->get('/categorie/',\custumbox\controller\AffichageController::class.':afficherCategorie')->SetName('categ');
 
 
-$app->get('/categorie/{idcateg}/',\custumbox\controller\AffichageController::class.':afficherUneCategorieJSON')->SetName('categJSON');
+$app->get('/categorieJSON/',\custumbox\controller\AffichageController::class.':afficherCategorieJSON')->SetName('categJSON');
+
+
+$app->get('/categorieJSON/{idcateg}/',\custumbox\controller\AffichageController::class.':afficherUneCategorieJSON')->SetName('categJSON');
 
 
 $app->run();
