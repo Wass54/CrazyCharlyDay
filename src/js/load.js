@@ -1,7 +1,8 @@
 import {config} from "./config.js"
 
 function loadResource(){
-    let pr = fetch("https://webetu.iutnc.univ-lorraine.fr"+uri, {
+                    //lien à changer ici
+    let pr = fetch(config.Host+config.ApiRootUrl, {
         credentials : 'include'
     }).then(resp => {
         if(resp.ok){
@@ -18,6 +19,5 @@ function loadResource(){
 
 
 export default {
-    loadPicture,
-    loadResource
+    loadPicture
 }
