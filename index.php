@@ -19,7 +19,7 @@ $db->bootEloquent();
 
 
 /**Acceuil */
-$app->get('/',\mywishlist\controller\AffichageController::class.':afficherAccueil')->SetName('accueil');
+$app->get('/',\custumbox\controller\AffichageController::class.':afficherAccueil')->SetName('accueil');
 
    
    

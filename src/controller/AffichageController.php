@@ -14,7 +14,7 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
     
     /**Acceuil fait appel à la vue participant qui va afficher l'acceuil */
     public function AfficherAccueil(Request $rq, Response $rs,array $args):Response{
-        $vue = new \mywishlist\vue\VueParticipant([],$this->container);
+        $vue = new \custumbox\vue\VueParticipant([],$this->container);
         $html = $vue->render(0) ;
         $rs->getBody()->write($html);
         return $rs;

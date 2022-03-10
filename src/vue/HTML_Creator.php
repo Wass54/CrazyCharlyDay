@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace mywishlist\vue;
+namespace custumbox\vue;
 // Classe permettant d'avoir la meme structure html dans toute les vue 
 class HTML_Creator{
 
