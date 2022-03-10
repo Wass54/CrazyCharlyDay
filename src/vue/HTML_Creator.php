@@ -119,11 +119,7 @@ class HTML_Creator{
             <!-- Bootstrap core JS-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             <!-- Core theme JS-->
-<<<<<<< HEAD
-            <script type = "module" src = "js/main.js"></script>
-=======
-            <script src="$url_js/index.js"></script>
->>>>>>> 121fbbb3b2d951398482be23c2da092816f6ad58
+            <script type="module" src="$url_js/main.js"></script>
         </body>
         </html>
         
