@@ -1,9 +1,9 @@
-.py-5{     background-color: #E77441; }
+.py-5{     background-color: #EAAD87; }
 
 .bg-light{     background-color: #F2DCA4; }
 
-.bg-dark{     background-color:#98C8C4;
-                }
+.bg-dark{     background-color:#98C8C4; }
+/*background: linear-gradient(#E77441, #47ACA4, #DDC484)*/
 
 .titre_page
 {
@@ -20,11 +20,14 @@
     padding-bottom: 15px;
     background-color: #DDC484;
     border-radius: 20px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .centrer{
-
+    padding-top: 60px;
     text-align: center;
+    border-radius: 5px;
 }
 
 header{
