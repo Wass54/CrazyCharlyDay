@@ -44,6 +44,18 @@ class CreationController /**Classe controleur généralement utiliser pour les c
         $produit->categorie = $categories;
         $produit->poids = $poids;
         $produit->save();
+        // $nameImage = Produit::latest()->first()->id.".jpg";//$produit->last()->get()->id;
+        $p = $produit->id;
+        var_dump($p);
+        $nameImage =$p . ".jpg";
+
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+           var_dump($_FILES);
+           $image = $_FILES;
+           move_uploaded_file($_FILES['photo1']['tmp_name'], "./images/produits/" . $nameImage);
+        }
+
+
         $vue = new \custumbox\vue\VueCreation([
             $produit->toArray()
         ], $this->container);

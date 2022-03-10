@@ -16,14 +16,23 @@ class VueCreation{
 
     private function formulaireProduit():string{
         $url = $this->container->router->pathFor('nvxProduits');
-        $content="<form method='post' action='$url'>
+        $content="<form method='post' action='$url' enctype=\"multipart/form-data\">
             <input type='text' name='titre' placeholder='le titre ici'/>
             <input type='text' name='description' placeholder='la description'/>
-            <input type='text' name='categories' placeholder='La categorie'/>
+            <input type='text' name='categories' placeholder='L id de la categorie'/>
             <input type='text' name='poids' placeholder='Le poids en kg'/>
             <button type='submit'>Créer le produit</button>
-            </form>\n";
+           
+            <h2>Upload Fichier</h2>
+            <label for=\"fileUpload\">Fichier:</label>
+            <input type=\"file\" name=\"photo1\" id=\"fileUpload\">
+            <input type=\"submit\" name=\"submit\" value=\"Upload\">
+            <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, .jpeg, .gif, .png sont autorisés jusqu'à une taille maximale de 5 Mo.</p>
+            </form>
+            \n";
         return $content;
+
+
     }
 
 
