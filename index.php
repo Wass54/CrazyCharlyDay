@@ -30,6 +30,9 @@ $app->get('/categorieJSON/',\custumbox\controller\AffichageController::class.':a
 
 $app->get('/categorieJSON/{idcateg}/',\custumbox\controller\AffichageController::class.':afficherUneCategorieJSON')->SetName('categJSON');
 
+$app->get('/details/',\custumbox\controller\AffichageController::class.':afficherDetails')->SetName('detail');
+
+
 
 $app->run();
 

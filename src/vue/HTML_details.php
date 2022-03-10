@@ -15,9 +15,9 @@ class HTML_Creator{
     }
     
     // Methode publique permettant de creer tout un document sous format html, le $content mit en paramettre est place dans le body du document 
-    public function html_body(string $content): string{
+    public function html_details(string $content): string{
 
-        $url_accueil = $this->container->router->pathFor('accueil');
+        $url_accueil = $this->container->router->pathFor('detail');
         $html = <<<END
         <!DOCTYPE html>
         <html lang="en">
@@ -207,6 +207,21 @@ class HTML_Creator{
            
         END;
                 return $html;
+    }
+
+    
+    public function render($selecteur) /**Cette fonction permet de recuperer les méthode qui sont en priver à partir des controller */
+    {
+        switch ($selecteur) {
+            case 0:
+                {
+                    $content = $this->html_details();
+                    break;
+                }
+        }
+        $creator = new HTML_Creator($this->tab, $this->container);
+        $html = $creator->html_body($content);
+        return $html;
     }
 }
 

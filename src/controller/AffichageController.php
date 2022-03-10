@@ -44,9 +44,12 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
     }
 
 
-    // public function afficherDetails(Request $rq, Response $rs, array $args) : Response{
-        
-    // }
+    public function afficherDetails(Request $rq, Response $rs, array $args) : Response{
+        $vue = new \custumbox\vue\HTML_details([], $this->container);
+        $html = $vue->render(0);
+        $rs->getBody()->write($html);
+        return $rs;
+    }
     
     
     
