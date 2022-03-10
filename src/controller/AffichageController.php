@@ -31,6 +31,18 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
         $rs->getBody()->write($html);
         return $rs;
     }
+    
+    
+    
+    public function afficherCategorieJSON(Request $rq, Response $rs, array $args): Response
+    {
+        $categorie = Categorie::where('id', '=', $args['idcateg'])->first();
+        $vue = new \custumbox\vue\VueParticipant($categorie->toArray(), $this->container, []);
+        $html = $vue->renderJSON(0);
+        $rs->getBody()->write($html);
+        return $rs;
+    }
+    
 
 
 }

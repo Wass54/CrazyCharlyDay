@@ -21,8 +21,9 @@ $db->bootEloquent();
 /**Acceuil */
 $app->get('/',\custumbox\controller\AffichageController::class.':afficherAccueil')->SetName('accueil');
 
-   
-   
+
+
+
 $app->run();
 
 

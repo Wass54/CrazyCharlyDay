@@ -53,4 +53,33 @@ class VueParticipant
         $html = $creator->html_body($content);
         return $html;
     }
+    
+    
+    
+    public function renderJSON($selecteur)
+    {
+        $json = "";
+        switch ($selecteur) {
+            case 0:
+                {
+                    $json = $this->affichageJSONCategorie();
+                    break;
+                }
+        }
+        return $json;
+    }
+    
+    
+    
+    //Créer un document en format json
+    private function affichageJSONCategorie(){
+        $json= "{\"Categorie\"";
+        foreach ($this->tab as $l){
+            $json.="ID Categ: $l[id]  Nom : $l[nom]";
+        }
+        $json.="}";
+        return $json;
+    }
+    
+    
 }
