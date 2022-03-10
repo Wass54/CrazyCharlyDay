@@ -42,6 +42,11 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
         $rs->getBody()->write($html);
         return $rs;
     }
+
+
+    // public function afficherDetails(Request $rq, Response $rs, array $args) : Response{
+        
+    // }
     
 
 
