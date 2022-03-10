@@ -5,6 +5,7 @@ namespace custumbox\controller;
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 use \custumbox\models\Categorie;
+use custumbox\models\Produit;
 
 class AffichageController{ /**Classe controleur généralement utiliser pour les affichage */
     private \Slim\Container $container;
@@ -33,6 +34,16 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
     }
     
     
+    // pour afficher les produit
+    public function afficherProduit(Request $rq, Response $rs,array $args):Response{
+        $produit = Produit::all();
+        $vue = new \custumbox\vue\VueParticipant($produit->toArray(),$this->container);
+        $html = $vue->render(2);
+        $rs->getBody()->write($html);
+        return $rs;
+    }
+    
+    
     
     public function afficherCategorieJSON(Request $rq, Response $rs, array $args): Response
     {
@@ -43,13 +54,6 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
         return $rs;
     }
 
-
-    public function afficherDetails(Request $rq, Response $rs, array $args) : Response{
-        $vue = new \custumbox\vue\HTML_details([], $this->container);
-        $html = $vue->render(0);
-        $rs->getBody()->write($html);
-        return $rs;
-    }
     
     
     
