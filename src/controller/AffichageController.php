@@ -43,6 +43,16 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
         return $rs;
     }
     
+    // pour afficher un produit specifique
+    public function afficherUnProduit(Request $rq, Response $rs,array $args):Response{
+        $produit = Produit::where('id', '=', $args["id"])->first();
+        $produits = Produit::all();
+        $vue = new \custumbox\vue\VueParticipant([$produit->toArray(), $produits->toArray()],$this->container);
+        $html = $vue->renderProduct(1);
+        $rs->getBody()->write($html);
+        return $rs;
+    }
+    
     
     
     public function afficherCategorieJSON(Request $rq, Response $rs, array $args): Response
@@ -54,6 +64,8 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
         return $rs;
     }
 
+    
+    
     
     public function afficherUneCategorieJSON(Request $rq, Response $rs, array $args): Response
     {
