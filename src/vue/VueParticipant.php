@@ -74,7 +74,7 @@ class VueParticipant
     
     
     
-    //Créer un document en format json
+    //Crï¿½er un document en format json
     private function affichageJSONCategorie(){
         $json= "{\"type\":\"categorie\", \"categories\":[{";
         foreach ($this->tab as $l){
@@ -92,5 +92,7 @@ class VueParticipant
         return $json;
     }
     
+    
+
     
 }
