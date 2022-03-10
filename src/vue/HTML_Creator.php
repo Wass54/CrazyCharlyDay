@@ -19,6 +19,7 @@ class HTML_Creator{
 
         $url_produit = $this->container->router->pathFor('produit');
         $url_accueil = $this->container->router->pathFor('accueil');
+        $url_nvxProduit = $this->container->router->pathFor('nouvProduit');
         $url_js = $this->container->router->pathFor('accueil') . "js";
         $url_css = $this->container->router->pathFor('accueil') . "css";
         $html = <<<END
@@ -52,6 +53,7 @@ class HTML_Creator{
                                     <li><a class="dropdown-item" href="#!">All Products</a></li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li><a class="dropdown-item" href="$url_produit">Produit</a></li>
+                                    <li><a class="dropdown-item" href="$url_nvxProduit">Nouveau produits</a></li>
                                     <li><a class="dropdown-item" href="#!">Categorie</a></li>
                                 </ul>
                             </li>

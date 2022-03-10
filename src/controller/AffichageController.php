@@ -55,8 +55,6 @@ class AffichageController{ /**Classe controleur généralement utiliser pour les
     }
 
     
-    
-    
     public function afficherUneCategorieJSON(Request $rq, Response $rs, array $args): Response
     {
         $categorie = Categorie::where("id", "=", $args['idcateg'])->first();
