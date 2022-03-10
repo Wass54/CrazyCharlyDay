@@ -44,7 +44,9 @@ class HTML_Creator{
                         </ul>
                     </nav>
                 </header>
-                <input type="text" id="product-search" placeholder="Rechercher un produit" />
+                <span class="mdi mdi-magnify">
+                    <input type="text" id="product-search" placeholder="Rechercher un produit" />
+                </span>
                 <div class="content">
                 $content
                 </div>
