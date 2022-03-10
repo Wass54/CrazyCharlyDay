@@ -26,7 +26,6 @@ class VueParticipant
         return $content;
     }
 
-
     private function affichage_Categorie(): string
     {
         $content = '';
@@ -52,4 +51,33 @@ class VueParticipant
         $html = $creator->html_body($content);
         return $html;
     }
+    
+    
+    
+    public function renderJSON($selecteur)
+    {
+        $json = "";
+        switch ($selecteur) {
+            case 0:
+                {
+                    $json = $this->affichageJSONCategorie();
+                    break;
+                }
+        }
+        return $json;
+    }
+    
+    
+    
+    //Créer un document en format json
+    private function affichageJSONCategorie(){
+        $json= "{\"type\":\"categorie\", \"categories\":[{";
+        foreach ($this->tab as $l){
+            $json.="\"categorie\": {\"idcateg\":$l[id],\"nom\":\"$l[nom]\"},";
+        }
+        $json.="}]}";
+        return $json;
+    }
+    
+    
 }
