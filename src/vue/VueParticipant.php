@@ -71,11 +71,11 @@ class VueParticipant
     
     //Créer un document en format json
     private function affichageJSONCategorie(){
-        $json= "{\"Categorie\"";
+        $json= "{\"type\":\"categorie\", \"categories\":[{";
         foreach ($this->tab as $l){
-            $json.="ID Categ: $l[id]  Nom : $l[nom]";
+            $json.="\"categorie\": {\"idcateg\":$l[id],\"nom\":\"$l[nom]\"},";
         }
-        $json.="}";
+        $json.="}]}";
         return $json;
     }
     

@@ -21,7 +21,7 @@ $db->bootEloquent();
 /**Acceuil */
 $app->get('/',\custumbox\controller\AffichageController::class.':afficherAccueil')->SetName('accueil');
 
-
+$app->get('/categorie/',\custumbox\controller\AffichageController::class.':afficherCategorieJSON')->SetName('categJSON');
 
 
 $app->run();
