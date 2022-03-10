@@ -6,17 +6,17 @@ body
 {
 	background-image: url("../web/img/fond.png");
 	background-attachment: fixed;
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 h2
 {
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 .affichage_des_listes
 {
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 .lien
