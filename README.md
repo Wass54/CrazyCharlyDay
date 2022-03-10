@@ -1,9 +1,11 @@
-# CrazyCharlyDay
+#CrazyCharlyDay
 Github pour la journée de Crazy Charly Day
 
+Nom de l'équipe : nom de l'équipe
+
 Composé de : 
-Wassim Elbakhtaoui
-Maxence Malleret
-Enes Karakaya
-Abdel Marzouk
-David Orzechowzki
+El Bakhtaoui Wassim 
+Malleret Maxence
+Karakaya Enes 
+Marzouk Abdel
+Orzechowzki David
