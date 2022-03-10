@@ -131,12 +131,11 @@ class HTML_Creator
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="$url_accueil">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="$url_accueil">Catégorie</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="$url_accueil" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="$url_accueil" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produits</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="$url_produit">Porduit</a></li>
+                                <li><a class="dropdown-item" href="$url_produit">Porduits</a></li>
                                 <li><a class="dropdown-item" href="$url_nvxProduit">Nouveau produits</a></li>
                             </ul>
                         </li>
