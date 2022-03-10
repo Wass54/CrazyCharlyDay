@@ -16,7 +16,6 @@ class HTML_Creator{
     
     // Methode publique permettant de creer tout un document sous format html, le $content mit en paramettre est place dans le body du document 
     public function html_body(string $content): string{
-
         $url_accueil = $this->container->router->pathFor('accueil');
         $url_js = $this->container->router->pathFor('accueil') . "js";
         echo $url_js;
@@ -37,7 +36,6 @@ class HTML_Creator{
                 <link href="css/styles.css" rel="stylesheet" />
             </head>
             <body>
-
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container px-4 px-lg-5">
