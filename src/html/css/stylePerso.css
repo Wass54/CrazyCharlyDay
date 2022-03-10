@@ -1,0 +1,32 @@
+.py-5{     background-color: #E77441; }
+
+.bg-light{     background-color: #F2DCA4; }
+
+.bg-dark{     background-color:#98C8C4;
+                }
+
+.titre_page
+{
+    font-size: large;
+    font-family: Benedict, serif;
+}
+
+.card{     background-color:#93C8C4;
+            padding: 4px;}
+
+.display-4{
+    font-size: 80px;
+    font-style: italic;
+    padding-bottom: 15px;
+    background-color: #DDC484;
+    border-radius: 20px;
+}
+
+.centrer{
+
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+}
