@@ -1,0 +1,74 @@
+
+
+
+
+body
+{
+	background-image: url("../web/img/fond.png");
+	background-attachment: fixed;
+	color: white;
+}
+
+h2
+{
+	color: white;
+}
+
+.affichage_des_listes
+{
+	color: white;
+}
+
+.lien
+{
+	color: rgba(240, 137, 40, 0.808);
+}
+
+.lien:hover
+{
+	color : rgb(225, 238, 38);
+	font-size: 120%;
+}
+
+
+.lienModif
+{
+	color : rgb(17, 198, 243);
+	font-size: 100%;
+}
+
+.lienModif:hover
+{
+	color : rgb(16, 175, 69);
+	font-size: 110%;
+}
+
+
+
+.logo:hover
+{
+	background-color: rgba(255, 255, 255, 0.151);
+	font-weight: bold;
+}
+
+.searchbar
+{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: 200px;
+	width: 100%;
+}
+
+.photo_profile
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.image
+{
+	display: block;
+	width: 100px;
+	height: 100px;
+}
