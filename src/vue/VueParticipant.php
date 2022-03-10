@@ -72,7 +72,7 @@ class VueParticipant
                       </div>";         
             
         }
-        return "<section>" . $content . "</section>";
+        return  $content;
     }
  
 
