@@ -26,7 +26,6 @@ class VueParticipant
         return $content;
     }
 
-
     private function affichage_Categorie(): string
     {
         $content = '';
@@ -36,7 +35,6 @@ class VueParticipant
         return "<section>" . $content . "</section>";
     }
  
-
 
 
 
