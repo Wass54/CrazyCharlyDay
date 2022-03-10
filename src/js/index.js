@@ -1,34 +1,25 @@
-//https://webetu.iutnc.univ-lorraine.fr/www/canals5/phox/doc/
-//https://webetu.iutnc.univ-lorraine.fr/www/canals5/phox/api/
 
-import photoloader from "./photoloader.js";
-import ui from "./ui.js";
+import {buildProductsList} from "./ui.js";
 
+let _products = [];
 
-let photo = photoloader.loadPicture(105).then(data => {
-    ui.displayPicture(data.photo)
-    dataCategorie(data).then(data => {
-        ui.displayCategorie(data)
-    })
-    dataCommentaires(data).then(data => {
-        ui.displayComments(data);
-    });
-
-});
-
-function getPicture(id){
-    photoloader.loadPicture(105).then(data => {
-        console.log(data.titre)
-        console.log(data.type)
-        console.log(data.url);
-    });
+class produit{
+    constructor(ref, price){
+        this.reference = ref;
+        this.price = price;
+    }
 }
 
+let p = new produit('A111', 3);
+let p2 = new produit('A222', 4);
+let p3 = new produit('A333', 5);
 
-function dataCategorie(dataPicture){
-    return photoloader.loadResource(dataPicture.links.categorie.href);
-}
+_products.push(p);
+_products.push(p2);
+_products.push(p3);
 
-function dataCommentaires(dataPicture){
-    return photoloader.loadResource(dataPicture.links.comments.href);
+export const init = function(){
+  
+  buildProductsList(_products); 
+
 }
