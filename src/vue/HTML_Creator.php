@@ -18,13 +18,8 @@ class HTML_Creator{
     public function html_body(string $content): string{
 
         $url_accueil = $this->container->router->pathFor('accueil');
-<<<<<<< HEAD
         $url_js = $this->container->router->pathFor('accueil') . "js";
         echo $url_js;
-=======
-        $url_detail = $this->container->router->pathFor('detail');
-
->>>>>>> c6482e37abd4ed33d026eec5ba57260182ec26be
         $html = <<<END
         <!DOCTYPE html>
         <html lang="en">
@@ -87,7 +82,7 @@ class HTML_Creator{
                         <div class="col mb-5">
                             <div class="card h-100">
                                 <!-- Product image-->
-                                <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." style="cursor: pointer;"  onclick="location.href='$url_detail';"/>
+                                <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." style="cursor: pointer;"  onclick="location.href='product.html';"/>
                                 <!-- Product details-->
                                 <div class="card-body p-4" style="cursor: pointer;"  onclick="location.href='product.html';">
                                     <div class="text-center">
